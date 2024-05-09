@@ -1,0 +1,20 @@
+[package]
+name = "chain-proof"
+version = { workspace = true }
+edition = { workspace = true }
+homepage = { workspace = true }
+publish = { workspace = true }
+resolver = "2"
+default-run = "chain-proof"
+
+[dependencies]
+guest-code-builder = { path = "../../guests" }
+bitcoin-header-chain = { path = "../../crates/bitcoin_header_chain" }
+risc0-zkvm = { workspace = true }
+risc0-zkvm-platform = { workspace = true }
+risc0-zkp = { workspace = true, optional = true }
+risc0-circuit-rv32im = { workspace = true, optional = true }
+serde = { workspace = true }
+bincode = { workspace = true }
+anyhow = { workspace = true }
+borsh = {workspace = true }

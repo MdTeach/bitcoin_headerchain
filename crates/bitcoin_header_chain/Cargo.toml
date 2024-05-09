@@ -1,0 +1,14 @@
+[package]
+name = "bitcoin-header-chain"
+version = { workspace = true }
+edition = { workspace = true }
+license = { workspace = true }
+publish = true
+
+[dependencies]
+bitcoin = { workspace = true }
+serde = {workspace = true}
+serde_json = { version = "1.0"}
+anyhow = {workspace = true }
+ethnum = "1.5.0"
+borsh = {workspace=true}

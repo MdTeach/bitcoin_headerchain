@@ -1,0 +1,17 @@
+[package]
+name = "guest-code-builder"
+version = { workspace = true }
+edition = { workspace = true }
+homepage = { workspace = true }
+publish = { workspace = true }
+resolver = "2"
+
+
+[build-dependencies]
+risc0-build = { workspace = true }
+
+[package.metadata.risc0]
+methods = ["guest-bitcoin"]
+
+[features]
+bench = []
